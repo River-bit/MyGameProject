@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,15 +11,15 @@ abstract class UIBase : MonoBehaviour{
     {
         canvas = GetComponent<Canvas> ();
         if (canvas == null){
-            canvas = transform.AddComponent<Canvas>();
+            canvas = transform.gameObject.AddComponent<Canvas>();
         }
         scaler = GetComponent<CanvasScaler> ();
         if (canvas == null){
-            scaler = transform.AddComponent<CanvasScaler>();
+            scaler = transform.gameObject.AddComponent<CanvasScaler>();
         }
         raycaster = GetComponent<GraphicRaycaster> ();
         if (canvas == null){
-            raycaster = transform.AddComponent<GraphicRaycaster>();
+            raycaster = transform.gameObject.AddComponent<GraphicRaycaster>();
         }
     }
     /// <summary>

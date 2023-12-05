@@ -1,3 +1,4 @@
+/*
 using SimpleJSON;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,8 +14,9 @@ class ConfigReader:Common.SigletonBase<ConfigReader>{
             if (_allTables == null){
                 _allTables = new cfg.Tables(file => JSON.Parse(File.ReadAllText($"{gameConfDir}/{file}.json")));
             }
-            return _allTables; 
+            return _allTables;
         }
     }
     public ConfigReader() { }
 }
+*/

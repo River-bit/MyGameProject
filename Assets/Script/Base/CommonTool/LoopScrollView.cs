@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -22,9 +21,10 @@ namespace Common.UI
                 Debug.LogError("Common.UI.MyUICompnentCreator : 路径错误，找不到组件");
                 return null;
             }
-            scroll.AddComponent<RectMask2D>();
-            scroll.AddComponent<UnityEngine.UI.Image>().color = new Color(0,0,0,0);
-            var loopList = scroll.AddComponent<LoopScrollView>();
+
+            scroll.gameObject.AddComponent<RectMask2D>();
+            scroll.gameObject.AddComponent<UnityEngine.UI.Image>().color = new Color(0,0,0,0);
+            var loopList = scroll.gameObject.AddComponent<LoopScrollView>();
             loopList.AddScrollView(item, content, itemCnt, scrollListLength, callBack, pad);
             return loopList;
         }
