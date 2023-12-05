@@ -18,7 +18,7 @@ namespace Common
         }
     }
 
-    class SigletonMonoBase<T>:MonoBehaviour where T:SigletonMonoBase<T>{
+    public class SigletonMonoBase<T>:MonoBehaviour where T:SigletonMonoBase<T>{
         static private T _instance;
         static public T Instance{
             get{

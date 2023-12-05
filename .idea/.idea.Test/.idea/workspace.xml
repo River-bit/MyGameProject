@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f82090a2-c001-49f4-8695-d8c8ecbd683e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/LoopScrollView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/LoopScrollView.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/base/UIBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/base/UIBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/base/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/UI/base/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Game.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/SigletonBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/SigletonBase.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +16,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Time/TimeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Library/AssetBundles-Browser-1.7.0/Tests/Editor/Util/TestUtil.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/test.cs" />
@@ -30,6 +27,10 @@
       <option value="$PROJECT_DIR$/Assets/Script/UI/base/UIBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/UI/base/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/ConfigReader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerStatus/PlayerStatus.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttr.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Time/TimeManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttrManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2Z715hjZ2Lmnvoakq76Ji1HYXpX" />
@@ -39,9 +40,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -73,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1701758124104</updated>
-      <workItem from="1701758129748" duration="1060000" />
+      <workItem from="1701758129748" duration="9226000" />
     </task>
     <servers />
   </component>
@@ -81,7 +89,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
