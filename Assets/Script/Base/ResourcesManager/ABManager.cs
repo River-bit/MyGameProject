@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 class ABManager:Common.SigletonMonoBase<ABManager>{
@@ -19,7 +20,7 @@ class ABManager:Common.SigletonMonoBase<ABManager>{
 
     public AssetBundle LoadABPackage(string abName){
         if (mainAB == null){
-            mainAB = AssetBundle.LoadFromFile(basePath + mainABName);
+            mainAB = AssetBundle.LoadFromFile(Path.Combine(basePath,mainABName));
             mainManifest = mainAB.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
         }
         string[] dependencies = mainManifest.GetDirectDependencies(abName);
