@@ -37,17 +37,6 @@
               <e p="Unity.AssetBundleBrowser.Editor.asmdef" t="Include" />
             </e>
             <e p="package.json" t="Include" />
-            <e p="Tests" t="Include">
-              <e p="Editor" t="Include">
-                <e p="ABModelTests.cs" t="Include" />
-                <e p="AssetBundleRecordTests.cs" t="Include" />
-                <e p="Unity.AssetBundleBrowser.Editor.Tests.asmdef" t="Include" />
-                <e p="Util" t="Include">
-                  <e p="ABModelUtil.cs" t="Include" />
-                  <e p="TestUtil.cs" t="Include" />
-                </e>
-              </e>
-            </e>
           </e>
           <e p="Ink" t="Include">
             <e p="Demos" t="Include">
@@ -263,11 +252,21 @@
             <e p="EventSystem" t="Include">
               <e p="EventHandler.cs" t="Include" />
             </e>
+            <e p="MVC" t="Include">
+              <e p="BaseController.cs" t="Include" />
+              <e p="BaseModel.cs" t="Include" />
+              <e p="BaseView.cs" t="Include" />
+            </e>
             <e p="ResourcesManager" t="Include">
               <e p="ABManager.cs" t="Include" />
             </e>
           </e>
           <e p="Game" t="Include">
+            <e p="Gamble" t="Include">
+              <e p="blackjack" t="Include">
+                <e p="BlackJackModel.cs" t="Include" />
+              </e>
+            </e>
             <e p="Player" t="Include">
               <e p="PlayerAttrManager.cs" t="Include" />
               <e p="PlayerStatus.cs" t="Include" />
@@ -326,7 +325,6 @@
       <e p="Temp\Bin" t="ExcludeRecursive" />
       <e p="Test.sln" t="IncludeFlat" />
       <e p="Unity.AssetBundleBrowser.Editor.csproj" t="IncludeRecursive" />
-      <e p="Unity.AssetBundleBrowser.Editor.Tests.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

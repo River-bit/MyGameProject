@@ -5,5 +5,7 @@ using UnityEngine;
 
 public class PlayerAttrManager:Common.SigletonBase<PlayerAttrManager>
 {
-    
+    public void test()
+    {
+    }
 }

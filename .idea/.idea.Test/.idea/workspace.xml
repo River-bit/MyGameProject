@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f82090a2-c001-49f4-8695-d8c8ecbd683e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Script/Game.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scene/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/SigletonBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/SigletonBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttrManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttrManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +19,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Time/TimeManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Library/AssetBundles-Browser-1.7.0/Tests/Editor/Util/TestUtil.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Base/MVC/BaseModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -30,7 +33,12 @@
       <option value="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerStatus/PlayerStatus.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttr.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Time/TimeManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack/BlackJack.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttrManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack/BlackJackModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2Z715hjZ2Lmnvoakq76Ji1HYXpX" />
@@ -82,6 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701758124104</updated>
       <workItem from="1701758129748" duration="9226000" />
+      <workItem from="1701919472721" duration="13291000" />
     </task>
     <servers />
   </component>
@@ -100,6 +109,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
