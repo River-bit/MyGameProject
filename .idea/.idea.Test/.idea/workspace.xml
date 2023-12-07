@@ -7,7 +7,13 @@
     <list default="true" id="f82090a2-c001-49f4-8695-d8c8ecbd683e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttrManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttrManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack/BlackJackModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack/BlackJackModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/base/UIBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/base/UIBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/base/UIManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/base/UIManager.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,10 +24,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gamble/OnePiece/OnePieveModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Time/TimeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gamble/GuessCard/GuessCardModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gamble/Nervosism/NervosismModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gamble/TexasPoker/TexasPokerModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Base/MVC/BaseModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gamble/RussianRoulette/RussianRouletteModel.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -35,10 +46,16 @@
       <option value="$PROJECT_DIR$/Assets/Script/Game/Time/TimeManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack/BlackJack.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttrManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseModel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack/BlackJackModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack/BlackJackModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/BlackJack/BlackJackModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/Nervosism/NervosismModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/OnePiece/OnePieveModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/RussianRoulette/RussianRouletteModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/TexasPoker/TexasPokerModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/GuessCard/GuessCardModel.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2Z715hjZ2Lmnvoakq76Ji1HYXpX" />
@@ -47,6 +64,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -90,7 +108,8 @@
       <option name="presentableId" value="Default" />
       <updated>1701758124104</updated>
       <workItem from="1701758129748" duration="9226000" />
-      <workItem from="1701919472721" duration="13291000" />
+      <workItem from="1701919472721" duration="15110000" />
+      <workItem from="1701942213156" duration="2213000" />
     </task>
     <servers />
   </component>

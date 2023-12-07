@@ -29,6 +29,7 @@ public class BlackJackModel:BaseModel<BlackJackModel>
         Hit(false);
         bool playerBlackJack = IsPlayerBlackJack();
         int dealerBlackJack = IsDealerBlackJack();
+        this.EventCall("OnGameStart");
         //玩家BJ胜利
         if (playerBlackJack && (dealerBlackJack == 0 || dealerBlackJack == 2))
         {
@@ -43,7 +44,7 @@ public class BlackJackModel:BaseModel<BlackJackModel>
         //保险
         if (dealerBlackJack == 2 || dealerBlackJack == 3)
         {
-            this.EventCall("OnBuyInsurance");
+            this.EventCall("OnBuyInsurance",dealerBlackJack);
         }
 
         while (!IsEnd())
