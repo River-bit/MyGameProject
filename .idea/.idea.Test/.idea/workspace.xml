@@ -6,14 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f82090a2-c001-49f4-8695-d8c8ecbd683e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack/BlackJackModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack/BlackJackModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/base/UIBase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/base/UIBase.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/base/UIManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/base/UIManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Gamble/TexasPoker/TexasPokerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Gamble/TexasPoker/TexasPokerModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +22,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gamble/OnePiece/OnePieveModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/CharacterMaker/CharacterMakerModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Time/TimeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gamble/GuessCard/GuessCardModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gamble/Nervosism/NervosismModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,8 +52,9 @@
       <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/Nervosism/NervosismModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/OnePiece/OnePieveModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/RussianRoulette/RussianRouletteModel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/TexasPoker/TexasPokerModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/GuessCard/GuessCardModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/CharacterMaker/CharacterMakerModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/TexasPoker/TexasPokerModel.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2Z715hjZ2Lmnvoakq76Ji1HYXpX" />
@@ -109,7 +108,8 @@
       <updated>1701758124104</updated>
       <workItem from="1701758129748" duration="9226000" />
       <workItem from="1701919472721" duration="15110000" />
-      <workItem from="1701942213156" duration="2213000" />
+      <workItem from="1701942213156" duration="2533000" />
+      <workItem from="1702004184217" duration="2843000" />
     </task>
     <servers />
   </component>
