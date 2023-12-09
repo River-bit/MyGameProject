@@ -1,4 +1,3 @@
-/*
 using SimpleJSON;
 using System.Collections;
 using System.Collections.Generic;
@@ -19,4 +18,3 @@ class ConfigReader:Common.SigletonBase<ConfigReader>{
     }
     public ConfigReader() { }
 }
-*/

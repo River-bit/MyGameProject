@@ -1,22 +1,31 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Reflection;
 using UnityEngine;
 
 public abstract class BaseController : MonoBehaviour
 {
-    private BaseModel _model;
-    private BaseView _view;
+    protected BaseModel _model;
+    protected BaseView _view;
 
-    public BaseController(BaseModel model,BaseView view)
+    private void Awake()
     {
-        _model = model;
-        _view = view;
+        InitController(transform);
     }
+
+    public void InitController(Transform trans)
+    {
+        
+    }
+
+    public abstract void BindMvc();
 
     /// <summary>
     /// 使用 BaseModel的EventRegister的方法
     /// </summary>
-    protected void Reg()
+    public virtual void EventReg()
     {
         _model.EventRegister("UpdateView",_view.UpdateView);
     }
@@ -24,7 +33,7 @@ public abstract class BaseController : MonoBehaviour
     /// <summary>
     /// 使用 BaseModel的EventUnregister的方法
     /// </summary>
-    protected void Unreg()
+    public virtual void EventUnreg()
     {
         _model.EventUnregister("UpdateView");
     }

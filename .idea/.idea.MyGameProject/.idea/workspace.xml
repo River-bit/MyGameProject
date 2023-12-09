@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="18ebaa64-b542-485c-a175-db94f77c12ee" name="Default Changelist" comment="" />
+    <list default="true" id="18ebaa64-b542-485c-a175-db94f77c12ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Package/Prefab/UI.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Package/Prefab/UI.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scene/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scene/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/ConfigReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/ConfigReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/test.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/test.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/UI/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/CharacterMaker.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/CharacterMaker/CharacterMakerModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/CharacterMaker/CharacterMakerModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/base.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,11 +32,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/UI/UILayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/900DC5CA-37FE-4089-8476-5DCCF7E242DE/8e/dfc60f05/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaMakeView.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Script/Base/ResourcesManager/ABManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/ConfigReader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/CharacterMaker/CharacterMakerModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/CharacterSkin/CharacterSkinModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/UI/UILayer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaMakeView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/test.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaMakeController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/UI/UIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2ZDcd1zzwKDsUdaPyItL5NYczJh" />
@@ -25,6 +61,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.34995976" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -48,10 +86,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="22140">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="22140" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -67,6 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701960176053</updated>
       <workItem from="1701960180483" duration="5639000" />
+      <workItem from="1702106279067" duration="12005000" />
     </task>
     <servers />
   </component>
@@ -85,6 +124,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

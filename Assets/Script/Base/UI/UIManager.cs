@@ -5,6 +5,7 @@ using System.IO;
 using System.Reflection;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
+using UnityEngine.UI;
 
 public class UIManager : Common.SigletonMonoBase<UIManager>
 {
@@ -20,60 +21,77 @@ public class UIManager : Common.SigletonMonoBase<UIManager>
 
     public void ShowPanel(string panelName,params object[] args)
     {
-        GameObject prefab;
+        GameObject obj;
         if (_prefabDict.ContainsKey(panelName))
         {
-            prefab = _prefabDict[panelName];
+            obj = _prefabDict[panelName];
         }
         else
         {
-            prefab = ABManager.Instance.LoadResource<GameObject>("uiprefab",panelName);
-            _prefabDict.Add(panelName,prefab);
-        }
-        prefab.SetActive(true);
+            var prefab = ABManager.Instance.LoadResource<GameObject>("uiprefab",panelName );
+            if (prefab == null)
+            {
+                Debug.LogError("UIManager : No such Panel!");
+                return;
+            }
 
-        Type viewType = Type.GetType(panelName+"View");
-        Type controllerType = Type.GetType(panelName+"Controller");
-
-        var view = prefab.GetComponent(viewType);
-        var ctl = prefab.GetComponent(controllerType);
-        if (view == null)
-        {
-            prefab.AddComponent(viewType);
+            obj = Instantiate(prefab, _uiroot);
+            _prefabDict.Add(panelName,obj);
+            var canvas = obj.AddComponent<Canvas>();
+            // var scaler = obj.AddComponent<CanvasScaler>();
+            obj.AddComponent<GraphicRaycaster>();
+            canvas.overrideSorting = true;
+            string layerName =  "Default";
+            if (UILayer.Instance.SortingLayer.ContainsKey(panelName))
+            {
+                layerName = UILayer.Instance.SortingLayer[panelName];
+            }
+            canvas.sortingLayerName = layerName;
+            canvas.sortingOrder = UILayer.Instance.SortingOrder[panelName];
+            //scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+            //scaler.screenMatchMode = CanvasScaler.ScreenMatchMode.MatchWidthOrHeight;
+            //scaler.referenceResolution = new Vector2(1920, 1080);
         }
-        if (ctl == null)
-        {
-            prefab.AddComponent(controllerType);
-        }
+        obj.SetActive(true);
 
-        MethodInfo InitData = viewType.GetMethod("InitData", new Type[] {typeof(object[])});
-        MethodInfo InitView = viewType.GetMethod("InitView", new Type[] {});
-        InitData?.Invoke(view,args);
-        InitView?.Invoke(view,null);
+        Type viewType = Type.GetType(panelName.Replace("Panel","View"));
+        Type controllerType = Type.GetType(panelName.Replace("Panel", "Controller"));
+
+        var view = obj.GetComponent(viewType) as BaseView ?? obj.AddComponent(viewType) as BaseView;
+        var ctl = obj.GetComponent(controllerType) as BaseController ?? obj.AddComponent(controllerType) as BaseController;
+        ctl?.BindMvc();
+        ctl?.EventReg();
+        view?.InitData(args);
+        view?.InitView();
     }
+
 
     public void HidePanel(string panelName)
     {
+        panelName = panelName.Replace("Panel", "");
         if (_prefabDict.ContainsKey(panelName))
         {
             var prefab = _prefabDict[panelName];
             var viewType = Type.GetType(panelName + "View");
-            var view = prefab.GetComponent(viewType);
-            MethodInfo DisableView = viewType.GetMethod("DisableView", new Type[] {});
-            DisableView?.Invoke(view,null);
+            var controllerType = Type.GetType(panelName + "Controller");
+            var view = prefab.GetComponent(viewType) as BaseView;
+            var ctl = prefab.GetComponent(controllerType) as BaseController;
+            view?.DisableView();
+            ctl?.EventUnreg();
             prefab.SetActive(false);
         }
     }
-
     public void ClosePanel(string panelName)
     {
         if (_prefabDict.ContainsKey(panelName))
         {
             var prefab = _prefabDict[panelName];
             var viewType = Type.GetType(panelName + "View");
-            var view = prefab.GetComponent(viewType);
-            MethodInfo DisableView = viewType.GetMethod("DisableView", new Type[] {});
-            DisableView?.Invoke(view,null);
+            var controllerType = Type.GetType(panelName + "Controller");
+            var view = prefab.GetComponent(viewType) as BaseView;
+            var ctl = prefab.GetComponent(controllerType) as BaseController;
+            view?.DisableView();
+            ctl?.EventUnreg();
             GameObject.Destroy(prefab);
             _prefabDict.Remove(panelName);
         }
