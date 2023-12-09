@@ -18,7 +18,6 @@ public class UIManager : Common.SigletonMonoBase<UIManager>
         _rootCanvas = FindObjectOfType<Canvas>();
         _uiroot = _rootCanvas.transform;
     }
-
     public void ShowPanel(string panelName,params object[] args)
     {
         GameObject obj;
@@ -36,6 +35,7 @@ public class UIManager : Common.SigletonMonoBase<UIManager>
             }
 
             obj = Instantiate(prefab, _uiroot);
+            obj.name = panelName;
             _prefabDict.Add(panelName,obj);
             var canvas = obj.AddComponent<Canvas>();
             // var scaler = obj.AddComponent<CanvasScaler>();
@@ -64,8 +64,6 @@ public class UIManager : Common.SigletonMonoBase<UIManager>
         view?.InitData(args);
         view?.InitView();
     }
-
-
     public void HidePanel(string panelName)
     {
         panelName = panelName.Replace("Panel", "");

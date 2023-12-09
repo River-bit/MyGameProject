@@ -5,56 +5,67 @@ using UnityEngine;
 
 public class CharacterSkinModel : BaseModel<CharacterSkinModel>
 {
-    //base
-    private int _gender = 0;//0=male,1=famale
-    private int _height = 0;
-    private int _figure = 0;
-    private int _color = 0;
-    //skin equipment
-    private List<int> _skinEquip = new List<int>();
-    
-    public int gender => _gender;
-    public int height => _standHeight[gender]+_height;
-    public int figure => _figure;
-    public int color => _color;
-
+    private Dictionary<int, CharaSkinInfo> _charaInfos = new Dictionary<int, CharaSkinInfo>();
     private int[] _standHeight = new int[2] {170, 160};
-
-    public void SetGender(int gender)
+    public void SetGender(int index,int gender)
     {
         if (gender < 2)
         {
-            _gender = gender;
+            var charaInfo = _charaInfos[index];
+            charaInfo.Gender = gender;
+            _charaInfos[index] = charaInfo;
         }
         EventCall("OnGenderChange");
     }
-
-    public void SetHeight(int height)
+    public void SetHeight(int index,int height)
     {
-        _height = height;
-        EventCall("ViewUpdate");
+        if (_charaInfos.ContainsKey(index))
+        {
+            var charaInfo = _charaInfos[index];
+            charaInfo.Height = height;
+            _charaInfos[index] = charaInfo;
+        }
+        EventCall("ViewUpdate",index);
     }
-
-    public void SetFigure(int figure)
+    public void SetFigure(int index,int figure)
     {
-        _figure = figure;
-        EventCall("ViewUpdate");
+        if (_charaInfos.ContainsKey(index))
+        {
+            var charaInfo = _charaInfos[index];
+            charaInfo.Figure = figure;
+            _charaInfos[index] = charaInfo;
+        }
+        EventCall("ViewUpdate",index);
     }
     
-    public void SetColor(int color)
+    public void SetColor(int index,int color)
     {
-        _color = color;
-        EventCall("ViewUpdate");
+        if (_charaInfos.ContainsKey(index))
+        {
+            var charaInfo = _charaInfos[index];
+            charaInfo.Color = color;
+            _charaInfos[index] = charaInfo;
+        }
+        EventCall("ViewUpdate",index);
     }
 
-    public void SetSkinEquip(ESkinEquipType type, int itemID)
+    public void SetSkinEquip(int index,ESkinEquipType type, int itemID)
     {
-        _skinEquip[(int) type] = itemID;
-        EventCall("ViewUpdate");
+        var charaInfo = _charaInfos[index];
+        if (charaInfo.Equip == null)
+        {
+            var e = new ESkinEquipType();
+            var length = System.Enum.GetNames(e.GetType()).Length;
+            charaInfo.Equip = new List<int>(length);
+        }
+        charaInfo.Equip[(int) type] = itemID;
+        _charaInfos[index] = charaInfo;
+        EventCall("ViewUpdate",index);
     }
 
-    public int GetSkinItemID(ESkinEquipType type)
+    public int GetSkinItemID(int index,ESkinEquipType type)
     {
-        return _skinEquip[(int) type];
+        var charaInfo = _charaInfos[index];
+        return charaInfo.Equip!=null&&charaInfo.Equip.Contains((int)type)?charaInfo.Equip[(int)type]:0;
     }
 }

@@ -7,6 +7,9 @@
       <e p="Assets" t="Include">
         <e p="Library" t="Include">
           <e p="AssetBundles-Browser-1.7.0" t="Include">
+            <e p="Documentation" t="Include">
+              <e p="images" t="Include" />
+            </e>
             <e p="Editor" t="Include">
               <e p="AssetBundleBrowserMain.cs" t="Include" />
               <e p="AssetBundleBuildTab.cs" t="Include" />
@@ -24,6 +27,7 @@
               <e p="AssetBundleTree.cs" t="Include" />
               <e p="AssetListTree.cs" t="Include" />
               <e p="BundleDetailList.cs" t="Include" />
+              <e p="Icons" t="Include" />
               <e p="InspectTab" t="Include">
                 <e p="AssetBundleInspectTab.cs" t="Include" />
                 <e p="AssetBundleRecord.cs" t="Include" />
@@ -34,13 +38,16 @@
               <e p="MessageSystem.cs" t="Include" />
               <e p="Unity.AssetBundleBrowser.Editor.asmdef" t="Include" />
             </e>
+            <e p="package.json" t="Include" />
           </e>
-          <e p="Excel" t="Include">
-            <e p="EPPlus.dll" t="Include" />
-          </e>
+          <e p="Excel" t="Include" />
           <e p="Ink" t="Include">
             <e p="Demos" t="Include">
               <e p="Basic Demo" t="Include">
+                <e p="Ink" t="Include">
+                  <e p="story.json" t="Include" />
+                </e>
+                <e p="Prefabs" t="Include" />
                 <e p="Scripts" t="Include">
                   <e p="BasicInkExample.cs" t="Include" />
                   <e p="Editor" t="Include">
@@ -53,6 +60,7 @@
                 <e p="FlowsDemo.cs" t="Include" />
               </e>
             </e>
+            <e p="Documentation" t="Include" />
             <e p="Editor" t="Include">
               <e p="Core" t="Include">
                 <e p="Compiler" t="Include">
@@ -95,9 +103,11 @@
                 </e>
                 <e p="Startup Window" t="Include">
                   <e p="InkUnityIntegrationStartupWindow.cs" t="Include" />
+                  <e p="Resources" t="Include" />
                 </e>
               </e>
             </e>
+            <e p="Extras" t="Include" />
             <e p="InkLibs" t="Include">
               <e p="Ink-Libraries.asmdef" t="Include" />
               <e p="InkCompiler" t="Include">
@@ -213,11 +223,15 @@
             </e>
           </e>
           <e p="luban" t="Include">
+            <e p="docs" t="Include">
+              <e p="images" t="Include" />
+            </e>
             <e p="Editor" t="Include">
               <e p="EditorBeanBase.cs" t="Include" />
               <e p="EditorEnumItemInfo.cs" t="Include" />
               <e p="Luban.Editor.asmdef" t="Include" />
             </e>
+            <e p="package.json" t="Include" />
             <e p="Runtime" t="Include">
               <e p="BeanBase.cs" t="Include" />
               <e p="ByteBuf.cs" t="Include" />
@@ -253,7 +267,33 @@
             <e p="save.TbStoryTypeSaveDataIndex.cs" t="Include" />
             <e p="Tables.cs" t="Include" />
           </e>
+          <e p="GenerateDatas" t="Include">
+            <e p="json" t="Include">
+              <e p="dialogue_tbstory.json" t="Include" />
+              <e p="game_tbgameprocess.json" t="Include" />
+              <e p="inquiry_tbexhibit.json" t="Include" />
+              <e p="inquiry_tbpersonnel.json" t="Include" />
+              <e p="inquiry_tbtestimony.json" t="Include" />
+              <e p="save_tbstorytypesavedataindex.json" t="Include" />
+            </e>
+          </e>
         </e>
+        <e p="Package" t="Include">
+          <e p="Chara" t="Include">
+            <e p="Base" t="Include" />
+            <e p="Clouth" t="Include" />
+            <e p="Glasses" t="Include" />
+            <e p="Hair" t="Include" />
+            <e p="Pants" t="Include" />
+          </e>
+          <e p="Prefab" t="Include">
+            <e p="UI" t="Include" />
+          </e>
+        </e>
+        <e p="Resources" t="Include">
+          <e p="BillingMode.json" t="Include" />
+        </e>
+        <e p="Scene" t="Include" />
         <e p="Script" t="Include">
           <e p="Base" t="Include">
             <e p="CommonTool" t="Include">
@@ -303,7 +343,10 @@
                 <e p="CharacterSkinModel.cs" t="Include" />
                 <e p="CharaMakeController.cs" t="Include" />
                 <e p="CharaMakeView.cs" t="Include" />
+                <e p="CharaShowView.cs" t="Include" />
               </e>
+              <e p="CharaMaker.cs" t="Include" />
+              <e p="CharaSkinInfo.cs" t="Include" />
               <e p="PlayerAttrManager.cs" t="Include" />
               <e p="PlayerStatus.cs" t="Include" />
             </e>
@@ -317,13 +360,18 @@
             <e p="UILayer.cs" t="Include" />
           </e>
         </e>
+        <e p="StreamingAssets" t="Include" />
         <e p="TextMesh Pro" t="Include">
+          <e p="Documentation" t="Include" />
           <e p="Fonts" t="Include">
             <e p="LiberationSans - OFL.txt" t="Include" />
           </e>
           <e p="Resources" t="Include">
+            <e p="Fonts &amp; Materials" t="Include" />
             <e p="LineBreaking Following Characters.txt" t="Include" />
             <e p="LineBreaking Leading Characters.txt" t="Include" />
+            <e p="Sprite Assets" t="Include" />
+            <e p="Style Sheets" t="Include" />
           </e>
           <e p="Shaders" t="Include">
             <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
@@ -346,6 +394,7 @@
           </e>
           <e p="Sprites" t="Include">
             <e p="EmojiOne Attribution.txt" t="Include" />
+            <e p="EmojiOne.json" t="Include" />
           </e>
         </e>
       </e>
