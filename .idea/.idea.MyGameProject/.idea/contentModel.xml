@@ -263,6 +263,7 @@
             <e p="inquiry_exhibit.cs" t="Include" />
             <e p="inquiry_personnel.cs" t="Include" />
             <e p="inquiry_testimony.cs" t="Include" />
+            <e p="item.EType.cs" t="Include" />
             <e p="save.ESaveDataType.cs" t="Include" />
             <e p="save.TbStoryTypeSaveDataIndex.cs" t="Include" />
             <e p="Tables.cs" t="Include" />
@@ -318,6 +319,17 @@
             </e>
           </e>
           <e p="Game" t="Include">
+            <e p="Chara" t="Include">
+              <e p="CharacterSkin" t="Include">
+                <e p="CharaMakeController.cs" t="Include" />
+                <e p="CharaMakeModel.cs" t="Include" />
+                <e p="CharaMakeView.cs" t="Include" />
+                <e p="CharaShowView.cs" t="Include" />
+              </e>
+              <e p="CharaManager.cs" t="Include" />
+              <e p="CharaSkinInfo.cs" t="Include" />
+              <e p="PlayerStatus.cs" t="Include" />
+            </e>
             <e p="Gamble" t="Include">
               <e p="blackjack" t="Include">
                 <e p="BlackJackModel.cs" t="Include" />
@@ -338,17 +350,8 @@
                 <e p="TexasPokerModel.cs" t="Include" />
               </e>
             </e>
-            <e p="Player" t="Include">
-              <e p="CharacterSkin" t="Include">
-                <e p="CharacterSkinModel.cs" t="Include" />
-                <e p="CharaMakeController.cs" t="Include" />
-                <e p="CharaMakeView.cs" t="Include" />
-                <e p="CharaShowView.cs" t="Include" />
-              </e>
-              <e p="CharaMaker.cs" t="Include" />
-              <e p="CharaSkinInfo.cs" t="Include" />
-              <e p="PlayerAttrManager.cs" t="Include" />
-              <e p="PlayerStatus.cs" t="Include" />
+            <e p="Item" t="Include">
+              <e p="ItemData.cs" t="Include" />
             </e>
             <e p="Time" t="Include">
               <e p="TimeManager.cs" t="Include" />

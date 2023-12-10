@@ -6,30 +6,31 @@ using UnityEngine;
 public delegate void BroadcastAction(BaseModel model,params object[] args);
 public abstract class BaseModel
 {
-
     protected Dictionary<string, BroadcastAction> _event = new Dictionary<string, BroadcastAction>();
 
     public void EventRegister(string eventName,BroadcastAction callback)
     {
-        if (_event.ContainsKey(eventName))
+        if (!_event.ContainsKey(eventName))
         {
-            Debug.LogWarning("event has been exit!");
-            return;
+            _event.Add(eventName,new BroadcastAction(callback));
         }
-        _event.Add(eventName,callback);
+        else
+        {
+            _event[eventName] += callback;
+        }
     }
     
-    public void EventUnregister(string eventName)
+    public void EventUnregister(string eventName,BroadcastAction callback)
     {
         if (_event.ContainsKey(eventName))
         {
-            _event.Remove(eventName);
+            _event[eventName] -= callback;
         }
     }
 
     public void EventCall(string eventName,params object[] args)
     {
-        if (_event[eventName] != null)
+        if ( _event.ContainsKey(eventName) && _event[eventName] != null)
         {
             _event[eventName](this,args);
         }

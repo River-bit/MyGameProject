@@ -69,6 +69,10 @@ namespace cfg.chara
         /// 包
         /// </summary>
         Bag = 14,
+        /// <summary>
+        /// 武器
+        /// </summary>
+        Weapon = 15,
     }
 
 } 

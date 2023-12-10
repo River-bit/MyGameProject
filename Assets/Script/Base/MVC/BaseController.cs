@@ -35,6 +35,6 @@ public abstract class BaseController : MonoBehaviour
     /// </summary>
     public virtual void EventUnreg()
     {
-        _model.EventUnregister("UpdateView");
+        _model.EventUnregister("UpdateView",_view.UpdateView);
     }
 }
