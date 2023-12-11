@@ -12,7 +12,7 @@ public abstract class BaseView : MonoBehaviour
     }
 
     protected Dictionary<string, Transform> UIs = new Dictionary<string, Transform>();
-    public abstract void UpdateView(BaseModel model,params object[] args);
+    public abstract void UpdateView(params object[] args);
     public abstract void InitData(params object[] args);
     public abstract void InitView();
     public abstract void DisableView();

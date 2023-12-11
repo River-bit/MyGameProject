@@ -7,32 +7,20 @@
     <list default="true" id="18ebaa64-b542-485c-a175-db94f77c12ee" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/chara.ESkinEquipType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/chara.ESkinEquipType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/StandaloneWindows" beforeDir="false" afterPath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/StandaloneWindows" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/StandaloneWindows.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/StandaloneWindows.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/uiprefab" beforeDir="false" afterPath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/uiprefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/uiprefab.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/uiprefab.manifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Package/Prefab/UI/CharaMakePanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Package/Prefab/UI/CharaMakePanel.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharaMaker.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharaMaker.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharaSkinInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharaSkinInfo.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaMakeController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaMakeController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaMakeView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaMakeView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaShowView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaShowView.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharacterSkinModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharacterSkinModel.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttrManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttrManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerStatus.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerStatus.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigTable/Datas/__enums__.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigTable/Datas/__enums__.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/LoopScrollView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/LoopScrollView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/StandaloneWindows" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/StandaloneWindows" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/StandaloneWindows.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/StandaloneWindows.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/uiprefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/uiprefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/uiprefab.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/uiprefab.manifest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigTable/luban/luban_examples-main/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigTable/luban/luban_examples-main/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +34,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/UILayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/test.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Chara/CharaManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Item/ItemData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/MyToggleGroup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FAA24DE0-FFB3-4694-8C03-84D33A7E3FC4/49/d5fb483f/CharacterInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/900DC5CA-37FE-4089-8476-5DCCF7E242DE/8e/dfc60f05/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -58,7 +46,6 @@
       <option value="$PROJECT_DIR$/Assets/Script/Game/CharacterSkin/CharacterSkinModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/UI/UILayer.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/test.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaShowView.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/UI/UIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaMaker.cs" />
@@ -74,10 +61,17 @@
       <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaSkinInfo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeView.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/LoopScrollView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UITool.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UITools.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/ToggleGroup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/UITools.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/MyToggleGroup.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2ZDcd1zzwKDsUdaPyItL5NYczJh" />
@@ -134,6 +128,7 @@
       <workItem from="1701960180483" duration="5639000" />
       <workItem from="1702106279067" duration="12414000" />
       <workItem from="1702135926360" duration="11854000" />
+      <workItem from="1702309175617" duration="3603000" />
     </task>
     <servers />
   </component>

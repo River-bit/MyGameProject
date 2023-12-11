@@ -264,6 +264,8 @@
             <e p="inquiry_personnel.cs" t="Include" />
             <e p="inquiry_testimony.cs" t="Include" />
             <e p="item.EType.cs" t="Include" />
+            <e p="item.TbItem.cs" t="Include" />
+            <e p="item_data.cs" t="Include" />
             <e p="save.ESaveDataType.cs" t="Include" />
             <e p="save.TbStoryTypeSaveDataIndex.cs" t="Include" />
             <e p="Tables.cs" t="Include" />
@@ -275,6 +277,7 @@
               <e p="inquiry_tbexhibit.json" t="Include" />
               <e p="inquiry_tbpersonnel.json" t="Include" />
               <e p="inquiry_tbtestimony.json" t="Include" />
+              <e p="item_tbitem.json" t="Include" />
               <e p="save_tbstorytypesavedataindex.json" t="Include" />
             </e>
           </e>
@@ -299,9 +302,13 @@
           <e p="Base" t="Include">
             <e p="CommonTool" t="Include">
               <e p="ConfigReader.cs" t="Include" />
-              <e p="LoopScrollView.cs" t="Include" />
               <e p="SigletonBase.cs" t="Include" />
               <e p="TransformHelper.cs" t="Include" />
+              <e p="UI" t="Include">
+                <e p="LoopScrollView.cs" t="Include" />
+                <e p="MyToggleGroup.cs" t="Include" />
+                <e p="UITools.cs" t="Include" />
+              </e>
             </e>
             <e p="EventSystem" t="Include">
               <e p="EventHandler.cs" t="Include" />
@@ -351,7 +358,11 @@
               </e>
             </e>
             <e p="Item" t="Include">
-              <e p="ItemData.cs" t="Include" />
+              <e p="ItemData" t="Include">
+                <e p="EquipItemDataData.cs" t="Include" />
+                <e p="ItemDataBase.cs" t="Include" />
+              </e>
+              <e p="WarehouseModel.cs" t="Include" />
             </e>
             <e p="Time" t="Include">
               <e p="TimeManager.cs" t="Include" />
