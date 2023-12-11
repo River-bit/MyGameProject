@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class CharaMakeView : BaseView
 {
-    private CharaMakeModel _model = CharaMakeModel.Instance;
+    private readonly CharaMakeModel _model = CharaMakeModel.Instance;
     private CharaSkinInfo _info;
+    private List<ItemDataBase> _equip;
 
     public override void UpdateView(BaseModel model, params object[] args)
     {
@@ -15,9 +16,12 @@ public class CharaMakeView : BaseView
     {
         int charaIndex = (int) args[0];
         _model.SetChara(charaIndex);
+        _info = CharaManager.Instance.GetSkinInfo(charaIndex);
+        _equip = WarehouseModel.Instance.GetAllEquipItem(charaIndex);
     }
     public override void InitView()
     {
+        
     }
 
     public override void DisableView()

@@ -8,9 +8,32 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Test/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Gamble/TexasPoker/TexasPokerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Gamble/TexasPoker/TexasPokerModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/Tables.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/Tables.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/chara.ESkinEquipType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/chara.ESkinEquipType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/dialogue.TbStory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/dialogue.TbStory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/dialogue_story.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/dialogue_story.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/game.EPlotType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/game.EPlotType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/game.TbGameProcess.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/game.TbGameProcess.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/game_process.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/game_process.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/game_save_index.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/game_save_index.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry.EInquiryType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry.EInquiryType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry.TbExhibit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry.TbExhibit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry.TbPersonnel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry.TbPersonnel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry.TbTestimony.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry.TbTestimony.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry_exhibit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry_exhibit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry_personnel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry_personnel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry_testimony.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/inquiry_testimony.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/item.EType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/item.EType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/save.ESaveDataType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/save.ESaveDataType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/save.TbStoryTypeSaveDataIndex.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/save.TbStoryTypeSaveDataIndex.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/ConfigReader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/ConfigReader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigTable/Datas/__enums__.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigTable/Datas/__enums__.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigTable/Datas/__tables__.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigTable/Datas/__tables__.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigTable/luban/Luban.dll" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +44,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/EquipItemDataData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gamble/OnePiece/OnePieveModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/CharacterMaker/CharacterMakerModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Time/TimeManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gamble/GuessCard/GuessCardModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gamble/Nervosism/NervosismModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -31,6 +54,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Gamble/RussianRoulette/RussianRouletteModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Item/WarehouseModel.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -38,7 +62,6 @@
       <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/LoopScrollView.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/UI/base/UIBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/UI/base/UIManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/ConfigReader.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerStatus/PlayerStatus.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttr.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Time/TimeManager.cs" />
@@ -46,7 +69,6 @@
       <option value="$PROJECT_DIR$/Assets/Script/Game/Player/PlayerAttrManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/blackjack/BlackJackModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/BlackJack/BlackJackModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/Nervosism/NervosismModel.cs" />
@@ -55,6 +77,17 @@
       <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/GuessCard/GuessCardModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/CharacterMaker/CharacterMakerModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Gamble/TexasPoker/TexasPokerModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/ItemBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/ItemBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/EquipItemData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/ItemDataBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/EquipItemDataData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/ConfigReader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/WarehouseModel.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2Z715hjZ2Lmnvoakq76Ji1HYXpX" />
@@ -110,6 +143,7 @@
       <workItem from="1701919472721" duration="15110000" />
       <workItem from="1701942213156" duration="2533000" />
       <workItem from="1702004184217" duration="2843000" />
+      <workItem from="1702263569355" duration="6771000" />
     </task>
     <servers />
   </component>

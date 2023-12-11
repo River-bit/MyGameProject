@@ -20,6 +20,7 @@ public partial class Tables
     public inquiry.TbExhibit TbExhibit {get; }
     public inquiry.TbTestimony TbTestimony {get; }
     public inquiry.TbPersonnel TbPersonnel {get; }
+    public item.TbItem TbItem {get; }
 
     public Tables(System.Func<string, JSONNode> loader)
     {
@@ -29,6 +30,7 @@ public partial class Tables
         TbExhibit = new inquiry.TbExhibit(loader("inquiry_tbexhibit"));
         TbTestimony = new inquiry.TbTestimony(loader("inquiry_tbtestimony"));
         TbPersonnel = new inquiry.TbPersonnel(loader("inquiry_tbpersonnel"));
+        TbItem = new item.TbItem(loader("item_tbitem"));
         ResolveRef();
     }
     
@@ -40,6 +42,7 @@ public partial class Tables
         TbExhibit.ResolveRef(this);
         TbTestimony.ResolveRef(this);
         TbPersonnel.ResolveRef(this);
+        TbItem.ResolveRef(this);
     }
 }
 

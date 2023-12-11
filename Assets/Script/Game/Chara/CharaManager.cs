@@ -14,8 +14,6 @@ public class CharaManager:BaseModel<CharaManager>
     private Dictionary<int, CharaSkinInfo> _charaSkinInfos = new Dictionary<int, CharaSkinInfo>();
     //角色装备
     private Dictionary<int, List<int>> _charaEquip = new Dictionary<int, List<int>>();
-    //角色道具
-    private Dictionary<int, List<ItemData>> _charaItem = new Dictionary<int, List<ItemData>>();
     
     /// <summary>
     /// 打开捏人界面

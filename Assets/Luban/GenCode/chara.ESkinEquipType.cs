@@ -48,31 +48,31 @@ namespace cfg.chara
         /// <summary>
         /// 上衣
         /// </summary>
-        Clouth = 9,
+        Clouth = 8,
         /// <summary>
         /// 裤子
         /// </summary>
-        Pants = 10,
+        Pants = 9,
         /// <summary>
         /// 鞋子
         /// </summary>
-        Shoes = 11,
+        Shoes = 10,
         /// <summary>
         /// 袜子
         /// </summary>
-        Socks = 12,
+        Socks = 11,
         /// <summary>
         /// 手部
         /// </summary>
-        Hand = 13,
+        Hand = 12,
         /// <summary>
         /// 包
         /// </summary>
-        Bag = 14,
+        Bag = 13,
         /// <summary>
         /// 武器
         /// </summary>
-        Weapon = 15,
+        Weapon = 14,
     }
 
 } 
