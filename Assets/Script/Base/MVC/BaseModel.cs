@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;using OfficeOpenXml.FormulaParsing.Excel.Functions.Math;
 using UnityEngine;
 
-public delegate void BroadcastAction(BaseModel model,params object[] args);
+public delegate void BroadcastAction(params object[] args);
 public abstract class BaseModel
 {
     protected Dictionary<string, BroadcastAction> _event = new Dictionary<string, BroadcastAction>();

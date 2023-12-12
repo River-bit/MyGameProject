@@ -16,17 +16,35 @@ public class CharaMakeView : BaseView
 
     public override void UpdateView(params object[] args)
     {
+        TransformHelper.HideAllChildren(_parent);
+        if (_curPage == 0)
+        {
+            UpdateSkinMakeView();
+        }
+        else if (_curPage == 1)
+        {
+            UpdateEquipMakeView();
+        }
     }
+
+    private void UpdateEquipMakeView()
+    {
+    }
+
+    private void UpdateSkinMakeView()
+    {
+    }
+
     public override void InitData(params object[] args)
     {
-        int charaIndex = (int) args[0];
+        int charaIndex = args.Length >0? (int) args[0]:0;
         _model.SetChara(charaIndex);
         _info = CharaManager.Instance.GetSkinInfo(charaIndex);
         _equip = WarehouseModel.Instance.GetAllEquipItem(charaIndex);
     }
     public override void InitView()
     {
-        _item = UIs["selecItem"]?.transform;
+        _item = UIs["selectItem"]?.transform;
         _parent = UIs["selection"].transform;
         _item?.gameObject.SetActive(false);
         

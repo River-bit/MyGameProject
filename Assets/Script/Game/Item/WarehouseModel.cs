@@ -47,7 +47,7 @@ public class WarehouseModel : BaseModel<WarehouseModel>
         if (!_warehouse.ContainsKey(charIndex)) return null;
 
         var items = _warehouse[charIndex];
-        var e = new cfg.chara.ESkinEquipType();
+        var e = new cfg.item.EEquipType();
         var length = System.Enum.GetNames(e.GetType()).Length;
         List<ItemDataBase> ret = new List<ItemDataBase>(length);
         for (int i = 0; i < items.Count; i++)

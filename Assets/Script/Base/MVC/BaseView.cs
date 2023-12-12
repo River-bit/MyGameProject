@@ -28,7 +28,7 @@ public abstract class BaseView : MonoBehaviour
             Transform trans = parent.transform.GetChild(i);
             if (!UIs.ContainsKey(trans.name))
             {
-                UIs.Add(trans.name,transform);
+                UIs.Add(trans.name,trans);
                 InitUI(trans);
             }
         }

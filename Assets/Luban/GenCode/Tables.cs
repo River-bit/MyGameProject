@@ -14,34 +14,16 @@ namespace cfg
 {
 public partial class Tables
 {
-    public game.TbGameProcess TbGameProcess {get; }
-    public save.TbStoryTypeSaveDataIndex TbStoryTypeSaveDataIndex {get; }
-    public dialogue.TbStory TbStory {get; }
-    public inquiry.TbExhibit TbExhibit {get; }
-    public inquiry.TbTestimony TbTestimony {get; }
-    public inquiry.TbPersonnel TbPersonnel {get; }
     public item.TbItem TbItem {get; }
 
     public Tables(System.Func<string, JSONNode> loader)
     {
-        TbGameProcess = new game.TbGameProcess(loader("game_tbgameprocess"));
-        TbStoryTypeSaveDataIndex = new save.TbStoryTypeSaveDataIndex(loader("save_tbstorytypesavedataindex"));
-        TbStory = new dialogue.TbStory(loader("dialogue_tbstory"));
-        TbExhibit = new inquiry.TbExhibit(loader("inquiry_tbexhibit"));
-        TbTestimony = new inquiry.TbTestimony(loader("inquiry_tbtestimony"));
-        TbPersonnel = new inquiry.TbPersonnel(loader("inquiry_tbpersonnel"));
         TbItem = new item.TbItem(loader("item_tbitem"));
         ResolveRef();
     }
     
     private void ResolveRef()
     {
-        TbGameProcess.ResolveRef(this);
-        TbStoryTypeSaveDataIndex.ResolveRef(this);
-        TbStory.ResolveRef(this);
-        TbExhibit.ResolveRef(this);
-        TbTestimony.ResolveRef(this);
-        TbPersonnel.ResolveRef(this);
         TbItem.ResolveRef(this);
     }
 }

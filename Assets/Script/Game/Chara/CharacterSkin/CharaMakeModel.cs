@@ -47,7 +47,7 @@ public class CharaMakeModel : BaseModel<CharaMakeModel>
     public void SetColor(int index,int color)
     {
         if (_curInfo == null) return;
-        _curInfo.Color = color;
+        _curInfo.SkinColor = color;
         EventCall("ViewUpdate",index);
     }
 }

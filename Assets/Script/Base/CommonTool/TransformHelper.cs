@@ -4,13 +4,13 @@ using UnityEngine;
 
 namespace Common{
     static public class TransformHelper{
-        static public T GetCompnent<T>(Transform trans,string childpath = null,bool active = true)where T:Component{
-            if (childpath == null || childpath == "")
+        public static T GetCompnent<T>(Transform trans,string childPath = null,bool active = true)where T:Component{
+            if (string.IsNullOrEmpty(childPath))
             {
                 return trans.GetComponent<T>();
             }
             Transform curTrans = trans;
-            string[] childList = childpath.Split("/");
+            string[] childList = childPath.Split("/");
             for (int i = 0; i < childList.Length; i++){
                 string childName = childList[i];
                 Transform nextTrans = null;
@@ -30,6 +30,13 @@ namespace Common{
             }
             curTrans.gameObject.SetActive(active);
             return curTrans.GetComponent<T>();
+        }
+        public static void HideAllChildren(Transform trans)
+        {
+            for (int i = 0; i < trans.childCount; i++)
+            {
+                trans.GetChild(i).gameObject.SetActive(false);
+            }
         }
     }
 }

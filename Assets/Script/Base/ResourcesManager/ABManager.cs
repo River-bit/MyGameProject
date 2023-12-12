@@ -18,7 +18,7 @@ class ABManager:Common.SigletonMonoBase<ABManager>{
         }
     }
 
-    public AssetBundle LoadABPackage(string abName){
+    public AssetBundle LoadAbPackage(string abName){
         if (mainAB == null){
             mainAB = AssetBundle.LoadFromFile(Path.Combine(basePath,mainABName));
             mainManifest = mainAB.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
@@ -41,19 +41,19 @@ class ABManager:Common.SigletonMonoBase<ABManager>{
 
     #region 同步加载资源方式
     public T LoadResource<T>(string abName,string resName)where T:Object{
-        AssetBundle ab = LoadABPackage(abName);
+        AssetBundle ab = LoadAbPackage(abName);
         return ab.LoadAsset<T>(resName);
     }
 
     public Object LoadResource(string abName,string resName){
-        AssetBundle ab = LoadABPackage(abName);
+        AssetBundle ab = LoadAbPackage(abName);
         return ab.LoadAsset(resName);
     }
     #endregion
 
     #region  异步加载资源方式
     public void LoadResourceAysc(string abName,string resName, System.Action<Object> callback){
-        AssetBundle ab = LoadABPackage(abName);
+        AssetBundle ab = LoadAbPackage(abName);
         StartCoroutine(LoadRes(ab,resName,callback));
     }
     IEnumerator LoadRes(AssetBundle ab,string resName, System.Action<Object> callback){
@@ -66,7 +66,7 @@ class ABManager:Common.SigletonMonoBase<ABManager>{
     }
 
     public void LoadResourceAysc(string abName,string resName,System.Type type,System.Action<Object> callback){
-        AssetBundle ab = LoadABPackage(abName);
+        AssetBundle ab = LoadAbPackage(abName);
         StartCoroutine(LoadRes(ab,resName,type,callback));
     }
     IEnumerator LoadRes(AssetBundle ab,string resName,System.Type type,System.Action<Object> callback){
@@ -79,7 +79,7 @@ class ABManager:Common.SigletonMonoBase<ABManager>{
     }
 
     public void LoadResourceAysc<T>(string abName, string resName, System.Action<Object> callback)where T:Object{
-        AssetBundle ab = LoadABPackage(abName);
+        AssetBundle ab = LoadAbPackage(abName);
         StartCoroutine(LoadRes<T>(ab, resName, callback));
     }
     IEnumerator LoadRes<T>(AssetBundle ab,string resName,System.Action<Object> callback)where T:Object{

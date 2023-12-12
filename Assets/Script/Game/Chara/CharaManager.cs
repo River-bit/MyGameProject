@@ -22,19 +22,19 @@ public class CharaManager:BaseModel<CharaManager>
     {
         UIManager.Instance.ShowPanel("CharaMakePanel",charaIndex);
     }
-    public void SetSkinEquip(int index,ESkinEquipType type, int itemID)
+    public void SetSkinEquip(int index,EEquipType type, int itemID)
     {
         if (!_charaEquip.ContainsKey(index)) return;
         if (_charaEquip[index] == null)
         {
-            var e = new ESkinEquipType();
+            var e = new EEquipType();
             var length = System.Enum.GetNames(e.GetType()).Length;
             _charaEquip.Add(index,new List<int>(length));
         }
         _charaEquip[index][(int) type] = itemID;
         EventCall("ViewUpdate",index);
     }
-    public int GetSkinEquipID(int index,ESkinEquipType type)
+    public int GetSkinEquipID(int index,EEquipType type)
     {
         var equipInfo = _charaEquip[index];
         return equipInfo!=null&&equipInfo.Contains((int)type)?equipInfo[(int)type]:0;
@@ -59,7 +59,7 @@ public class CharaManager:BaseModel<CharaManager>
         //Skin
         SetSkinInfo(0, new CharaSkinInfo());
         //Equip
-        var e = new ESkinEquipType();
+        var e = new EEquipType();
         var length = System.Enum.GetNames(e.GetType()).Length;
         _charaEquip.Add(0,new List<int>(length));
     }

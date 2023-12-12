@@ -21,7 +21,7 @@ public sealed partial class item_data : Luban.BeanBase
         { if(!_buf["id"].IsNumber) { throw new SerializationException(); }  Id = _buf["id"]; }
         { if(!_buf["itemType"].IsNumber) { throw new SerializationException(); }  ItemType = (item.EType)_buf["itemType"].AsInt; }
         { if(!_buf["name"].IsString) { throw new SerializationException(); }  Name = _buf["name"]; }
-        { if(!_buf["equipType"].IsNumber) { throw new SerializationException(); }  EquipType = (chara.ESkinEquipType)_buf["equipType"].AsInt; }
+        { if(!_buf["equipType"].IsNumber) { throw new SerializationException(); }  EquipType = (item.EEquipType)_buf["equipType"].AsInt; }
     }
 
     public static item_data Deserializeitem_data(JSONNode _buf)
@@ -33,7 +33,7 @@ public sealed partial class item_data : Luban.BeanBase
     public readonly int Id;
     public readonly item.EType ItemType;
     public readonly string Name;
-    public readonly chara.ESkinEquipType EquipType;
+    public readonly item.EEquipType EquipType;
    
     public const int __ID__ = -2141642410;
     public override int GetTypeId() => __ID__;

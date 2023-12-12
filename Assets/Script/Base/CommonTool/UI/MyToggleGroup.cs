@@ -22,6 +22,7 @@ namespace Common.UI
         public void AddToggle(UnityAction<bool> callBack,UnityAction<Transform> itemInit)
         {
             var item = Instantiate(_itemBase, transform);
+            item.gameObject.SetActive(true);
             Toggle toggle = item.GetComponent<Toggle>();
             if (toggle == null)
             {
@@ -43,6 +44,7 @@ namespace Common.UI
         public void SetItemBase(Transform itemBase)
         {
             _itemBase = itemBase;
+            _itemBase.gameObject.SetActive(false);
         }
     }
 }

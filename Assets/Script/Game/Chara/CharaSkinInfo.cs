@@ -8,7 +8,11 @@ public class CharaSkinInfo
     public int FrontHairStyle;
     public int MiddleHairStyle;
     public int BackHairStyle;
+    public int Eye;
+    public int Eyebrow;
+    public int Mouth;
+    public int Nose;
     public int Height;
-    public int Color;
+    public int SkinColor;
     public int Figure;
 }

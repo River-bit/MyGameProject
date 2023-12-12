@@ -8,6 +8,7 @@ public class test : MonoBehaviour
 {
     private void Awake()
     {
-        UIManager.Instance.ShowPanel("CharaMakePanel");
+        print("Test");
+        UIManager.Instance.ShowPanel("CharaMakePanel",0);
     }
 }

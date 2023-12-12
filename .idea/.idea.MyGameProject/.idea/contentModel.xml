@@ -249,40 +249,21 @@
         </e>
         <e p="luban" t="Include">
           <e p="GenCode" t="Include">
-            <e p="chara.ESkinEquipType.cs" t="Include" />
-            <e p="dialogue.TbStory.cs" t="Include" />
-            <e p="dialogue_story.cs" t="Include" />
-            <e p="game.EPlotType.cs" t="Include" />
-            <e p="game.TbGameProcess.cs" t="Include" />
-            <e p="game_process.cs" t="Include" />
-            <e p="game_save_index.cs" t="Include" />
-            <e p="inquiry.EInquiryType.cs" t="Include" />
-            <e p="inquiry.TbExhibit.cs" t="Include" />
-            <e p="inquiry.TbPersonnel.cs" t="Include" />
-            <e p="inquiry.TbTestimony.cs" t="Include" />
-            <e p="inquiry_exhibit.cs" t="Include" />
-            <e p="inquiry_personnel.cs" t="Include" />
-            <e p="inquiry_testimony.cs" t="Include" />
+            <e p="chara.ESkinType.cs" t="Include" />
+            <e p="item.EEquipType.cs" t="Include" />
             <e p="item.EType.cs" t="Include" />
             <e p="item.TbItem.cs" t="Include" />
             <e p="item_data.cs" t="Include" />
-            <e p="save.ESaveDataType.cs" t="Include" />
-            <e p="save.TbStoryTypeSaveDataIndex.cs" t="Include" />
             <e p="Tables.cs" t="Include" />
           </e>
           <e p="GenerateDatas" t="Include">
             <e p="json" t="Include">
-              <e p="dialogue_tbstory.json" t="Include" />
-              <e p="game_tbgameprocess.json" t="Include" />
-              <e p="inquiry_tbexhibit.json" t="Include" />
-              <e p="inquiry_tbpersonnel.json" t="Include" />
-              <e p="inquiry_tbtestimony.json" t="Include" />
               <e p="item_tbitem.json" t="Include" />
-              <e p="save_tbstorytypesavedataindex.json" t="Include" />
             </e>
           </e>
         </e>
-        <e p="Package" t="Include">
+        <e p="Resources" t="Include">
+          <e p="BillingMode.json" t="Include" />
           <e p="Chara" t="Include">
             <e p="Base" t="Include" />
             <e p="Clouth" t="Include" />
@@ -293,9 +274,6 @@
           <e p="Prefab" t="Include">
             <e p="UI" t="Include" />
           </e>
-        </e>
-        <e p="Resources" t="Include">
-          <e p="BillingMode.json" t="Include" />
         </e>
         <e p="Scene" t="Include" />
         <e p="Script" t="Include">
@@ -320,6 +298,7 @@
             </e>
             <e p="ResourcesManager" t="Include">
               <e p="ABManager.cs" t="Include" />
+              <e p="ResourcesManager.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
               <e p="UIManager.cs" t="Include" />
