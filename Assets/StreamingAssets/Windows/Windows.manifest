@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 3955693756
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: billingmode.unity3d
+      Dependencies: {}
+    Info_1:
+      Name: chara/base/chara__0003_arm_base.unity3d
+      Dependencies: {}
+    Info_2:
+      Name: chara/base/chara__0004_leg_base.unity3d
+      Dependencies: {}
+    Info_3:
+      Name: chara/base/chara__0005_body_base.unity3d
+      Dependencies: {}
+    Info_4:
+      Name: chara/base/chara__0007_head_base.unity3d
+      Dependencies: {}
+    Info_5:
+      Name: chara/clouth/chara__0000_clouth_1.unity3d
+      Dependencies: {}
+    Info_6:
+      Name: chara/glasses/chara__0002_glasses.unity3d
+      Dependencies: {}
+    Info_7:
+      Name: chara/hair/chara__0006_hair_front.unity3d
+      Dependencies: {}
+    Info_8:
+      Name: chara/hair/chara__0008_hair_back.unity3d
+      Dependencies: {}
+    Info_9:
+      Name: chara/pants/chara__0001_pants.unity3d
+      Dependencies: {}
+    Info_10:
+      Name: prefab/ui/charamakepanel.unity3d
+      Dependencies: {}
+    Info_11:
+      Name: prefab/ui/timepanel.unity3d
+      Dependencies: {}

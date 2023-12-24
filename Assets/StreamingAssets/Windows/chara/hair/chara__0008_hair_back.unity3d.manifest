@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 2008698703
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 96cfdd7b826d2487b9595014d07690ef
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 96cfdd7b826d2487b9595014d07690ef
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Chara/Hair/chara__0008_hair_back.png
+Dependencies: []

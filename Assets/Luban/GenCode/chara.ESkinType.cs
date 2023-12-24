@@ -43,7 +43,7 @@ namespace cfg.chara
         /// <summary>
         /// 鼻子
         /// </summary>
-        Noise = 6,
+        Nose = 6,
         /// <summary>
         /// 嘴
         /// </summary>

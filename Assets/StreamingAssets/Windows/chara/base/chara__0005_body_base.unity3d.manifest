@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 624794122
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: d2439467f5ace925b5a4e577f6ecdf8a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d2439467f5ace925b5a4e577f6ecdf8a
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Chara/Base/chara__0005_body_base.png
+Dependencies: []

@@ -8,7 +8,7 @@ public class test : MonoBehaviour
 {
     private void Awake()
     {
-        print("Test");
-        UIManager.Instance.ShowPanel("CharaMakePanel",0);
+        // UIManager.Instance.ShowPanel("CharaMakePanel",0);
+        var obj = ResourcesManager.Instance.Load<GameObject>("Prefab/UI/TimePanel");
     }
 }

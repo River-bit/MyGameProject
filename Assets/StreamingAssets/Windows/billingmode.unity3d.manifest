@@ -1,0 +1,20 @@
+ManifestFileVersion: 0
+CRC: 1186770465
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8a46f6486fd3ba0608ed73b111dfa6ab
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 5ad585dd02dfb5016c0dad519eab8f49
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 8a46f6486fd3ba0608ed73b111dfa6ab
+HashAppended: 0
+ClassTypes:
+- Class: 49
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/BillingMode.json
+Dependencies: []

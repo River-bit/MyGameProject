@@ -1,7 +1,10 @@
 ManifestFileVersion: 0
-CRC: 2588108188
+CRC: 2711479323
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: uiprefab
+      Name: billingmode.unity3d
+      Dependencies: {}
+    Info_1:
+      Name: 123
       Dependencies: {}
