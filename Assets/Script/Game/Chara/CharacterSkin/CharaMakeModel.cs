@@ -1,53 +1,33 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using LifeGame.Chara;
 using UnityEngine;
 
-public class CharaMakeModel : BaseModel<CharaMakeModel>
+namespace LifeGame.Model
 {
-    private CharaSkinInfo _curInfo;
-    private List<List<int>> _selectabelItemList = new List<List<int>>();
-    //标准身高
-    private int[] _standHeight = new int[2] {170, 160};
-    public void SetChara(int charaIndex)
+    public class CharaMakeModel : BaseModel<CharaMakeModel>
     {
-        _curInfo = CharaManager.Instance.GetSkinInfo(charaIndex);
-        if (_curInfo == null)
+        private int[] _looks;
+        private List<List<int>> _selectableItemList = new List<List<int>>();
+        private int _charaId;
+
+        private readonly CharaManager _charaMgr = CharaManager.Instance;
+
+        public void SetChara(int charaId)
         {
-            //玩家
-            if (charaIndex == 0)
-            {
-                CharaManager.Instance.GenerateNewPlayer();
-            }
+            _charaId = charaId;
+            _looks = _charaMgr.GetLooksInfo(_charaId) ?? new int[Enum.GetNames(Type.GetType("cfg.chara.ESkinType") ?? throw new InvalidOperationException()).Length];
         }
-        _curInfo = CharaManager.Instance.GetSkinInfo(charaIndex);
-    }
-    public void SetGender(int index,int gender)
-    {
-        if (gender > 1)
+        public void SetLooks(cfg.chara.ESkinType type,int val)
         {
-            Debug.LogError("No Such Gender!");
+            if (_looks == null) return;
+            _looks[(int) type] = val;
+            EventCall("UpdateView");
         }
-        if (_curInfo == null) return;
-        _curInfo.Gender = gender;
-        EventCall("ViewUpdate",index);
-    }
-    public void SetHeight(int index,int height)
-    {
-        if (_curInfo == null) return;
-        _curInfo.Height = height;
-        EventCall("ViewUpdate",index);
-    }
-    public void SetFigure(int index,int figure)
-    {
-        if (_curInfo == null) return;
-        _curInfo.Figure = figure;
-        EventCall("ViewUpdate",index);
-    }
-    public void SetColor(int index,int color)
-    {
-        if (_curInfo == null) return;
-        _curInfo.SkinColor = color;
-        EventCall("ViewUpdate",index);
+        public void SaveLooks(int charaId)
+        {
+            _charaMgr.SetLooks(charaId,_looks);
+        }
     }
 }

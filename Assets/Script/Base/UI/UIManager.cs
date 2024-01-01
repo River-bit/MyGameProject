@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using Common;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ public class UIManager : Common.SigletonMonoBase<UIManager>
     private Canvas _rootCanvas;
     private Transform _uiroot;
     private Dictionary<string, GameObject> _prefabDict = new Dictionary<string, GameObject>();
+    private string _pathPrfix = "Prefab/UI";
 
     public void Awake()
     {
@@ -27,13 +29,11 @@ public class UIManager : Common.SigletonMonoBase<UIManager>
         }
         else
         {
-            var prefab = ABManager.Instance.LoadResource<GameObject>("uiprefab",panelName );
+            var prefab = ResourcesManager.Instance.Load<GameObject>(Path.Combine(_pathPrfix,panelName));
             if (prefab == null)
             {
-                Debug.LogError("UIManager : No such Panel!");
-                return;
+                throw new MyException("UIManager : No such Panel!");
             }
-
             obj = Instantiate(prefab, _uiroot);
             obj.name = panelName;
             _prefabDict.Add(panelName,obj);
@@ -54,14 +54,14 @@ public class UIManager : Common.SigletonMonoBase<UIManager>
         }
         obj.SetActive(true);
 
-        Type viewType = Type.GetType(panelName.Replace("Panel","View"));
-        Type controllerType = Type.GetType(panelName.Replace("Panel", "Controller"));
+        Type viewType = Type.GetType(Global.NamespaceHead+".View."+panelName.Replace("Panel","View"),true);
+        Type controllerType = Type.GetType(Global.NamespaceHead+".Controller."+panelName.Replace("Panel", "Controller"),true);
 
         var view = obj.GetComponent(viewType) as BaseView ?? obj.AddComponent(viewType) as BaseView;
         var ctl = obj.GetComponent(controllerType) as BaseController ?? obj.AddComponent(controllerType) as BaseController;
         ctl?.BindMvc();
         ctl?.EventReg();
-        view?.InitData(args);
+        view?.InitData();
         view?.InitView();
     }
     public void HidePanel(string panelName)

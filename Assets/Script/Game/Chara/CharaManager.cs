@@ -4,63 +4,101 @@ using System.Collections.Generic;
 using UnityEngine;
 using cfg.chara;
 using cfg.item;
+using Common;
+using Common.Save;
 
-/// <summary>
-/// 角色对外管理接口类，外部组件主要通过本类与角色功能互动
-/// </summary>
-public class CharaManager:BaseModel<CharaManager>
+namespace LifeGame.Chara
 {
-    //角色外貌
-    private Dictionary<int, CharaSkinInfo> _charaSkinInfos = new Dictionary<int, CharaSkinInfo>();
-    //角色装备
-    private Dictionary<int, List<int>> _charaEquip = new Dictionary<int, List<int>>();
-    
     /// <summary>
-    /// 打开捏人界面
+    /// 角色管理类
     /// </summary>
-    public void OpenCharaMakePanel(int charaIndex)
+    public class CharaManager:Common.SigletonBase<CharaManager>,ISaveAble
     {
-        UIManager.Instance.ShowPanel("CharaMakePanel",charaIndex);
-    }
-    public void SetSkinEquip(int index,EEquipType type, int itemID)
-    {
-        if (!_charaEquip.ContainsKey(index)) return;
-        if (_charaEquip[index] == null)
+        private PlayerData _playerData;
+        private Dictionary<int, NpcData> _npcDataDict = new Dictionary<int, NpcData>();
+        /// <summary>
+        /// 打开捏人界面
+        /// </summary>
+        public void OpenCharaMakePanel(int charaId)
         {
-            var e = new EEquipType();
-            var length = System.Enum.GetNames(e.GetType()).Length;
-            _charaEquip.Add(index,new List<int>(length));
+            UIManager.Instance.ShowPanel("CharaMakePanel",charaId);
         }
-        _charaEquip[index][(int) type] = itemID;
-        EventCall("ViewUpdate",index);
-    }
-    public int GetSkinEquipID(int index,EEquipType type)
-    {
-        var equipInfo = _charaEquip[index];
-        return equipInfo!=null&&equipInfo.Contains((int)type)?equipInfo[(int)type]:0;
-    }
-    public CharaSkinInfo GetSkinInfo(int charaIndex)
-    {
-        return _charaSkinInfos.ContainsKey(charaIndex) ? _charaSkinInfos[charaIndex] : null;
-    }
-    public void SetSkinInfo(int charaIndex,CharaSkinInfo newInfo)
-    {
-        if (_charaSkinInfos.ContainsKey(charaIndex))
+        public void GenerateNewNpc()
         {
-            _charaSkinInfos[charaIndex] = newInfo;
         }
-        else
+
+        public int[] GetLooksInfo(int charaId)
         {
-            _charaSkinInfos.Add(charaIndex,newInfo);
+            if (charaId == 0)
+            {
+                if (_playerData == null)
+                {
+                    throw new MyException("_playerData is null");
+                }
+                return _playerData.looks;
+            }
+            else
+            {
+                if (_npcDataDict.ContainsKey(charaId))
+                {
+                    return _npcDataDict[charaId].looks;
+                }
+                else
+                {
+                    throw new MyException($"No such npc whose id is {charaId}");
+                }
+            }
         }
-    }
-    public void GenerateNewPlayer()
-    {
-        //Skin
-        SetSkinInfo(0, new CharaSkinInfo());
-        //Equip
-        var e = new EEquipType();
-        var length = System.Enum.GetNames(e.GetType()).Length;
-        _charaEquip.Add(0,new List<int>(length));
+
+        public void SetLooks(int charaId, ESkinType type, int val)
+        {
+            if (charaId == 0)
+            {
+                _playerData.SetLooks(type,val);
+            }
+            else
+            {
+                if (_npcDataDict.ContainsKey(charaId))
+                {
+                    _npcDataDict[charaId].SetLooks(type,val);
+                }
+                else
+                {
+                    throw new MyException($"No such npc whose id is {charaId}");
+                }
+            }
+        }
+
+        public void SetLooks(int charaId,int[] newLook)
+        {
+            if (charaId == 0)
+            {
+                _playerData.SetLooks(newLook);
+            }
+            else
+            {
+                if (_npcDataDict.ContainsKey(charaId))
+                {
+                    _npcDataDict[charaId].SetLooks(newLook);
+                }
+                else
+                {
+                    throw new MyException($"No such npc whose id is {charaId}");
+                }
+            }
+        }
+
+        public int saveId => SaveDataType.CharaMake;
+        public void Save()
+        {
+        }
+
+        public void Load()
+        {
+        }
+
+        public void RegSaveLoadFunc()
+        {
+        }
     }
 }

@@ -1,11 +1,4 @@
-//------------------------------------------------------------
-// Game Framework
-// Copyright © 2013-2021 Jiang Yin. All rights reserved.
-// Homepage: https://gameframework.cn/
-// Feedback: mailto:ellan@gameframework.cn
-//------------------------------------------------------------
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace Common.Fsm
@@ -14,10 +7,9 @@ namespace Common.Fsm
     /// 有限状态机。
     /// </summary>
     /// <typeparam name="T">有限状态机持有者类型。</typeparam>
-    public class Fsm<T>:FsmBase where T : class
+    internal sealed class Fsm<T> : FsmBase, IFsm<T> where T : class
     {
         private T m_Owner;
-        private string m_Name;
         private readonly Dictionary<Type, FsmState<T>> m_States;
         private FsmState<T> m_CurrentState;
         private float m_CurrentStateTime;
@@ -142,7 +134,8 @@ namespace Common.Fsm
                 throw new MyException("FSM states is invalid.");
             }
 
-            Fsm<T> fsm = new Fsm<T> {m_Name = name, m_Owner = owner, m_IsDestroyed = false};
+            // Fsm<T> fsm = ReferencePool.Acquire<Fsm<T>>();
+            Fsm<T> fsm = new Fsm<T> {Name = name, m_Owner = owner, m_IsDestroyed = false};
             foreach (FsmState<T> state in states)
             {
                 if (state == null)
@@ -153,7 +146,7 @@ namespace Common.Fsm
                 Type stateType = state.GetType();
                 if (fsm.m_States.ContainsKey(stateType))
                 {
-                    throw new MyException(string.Format("FSM '%s' state '%s' is already exist.", name, stateType.FullName));
+                    throw new MyException(string.Format("FSM '{0}' state '{1}' is already exist.", new TypeNamePair(typeof(T), name), stateType.FullName));
                 }
 
                 fsm.m_States.Add(stateType, state);
@@ -182,7 +175,8 @@ namespace Common.Fsm
                 throw new MyException("FSM states is invalid.");
             }
 
-            Fsm<T> fsm = new Fsm<T> {m_Name = name, m_Owner = owner, m_IsDestroyed = false};
+            // Fsm<T> fsm = ReferencePool.Acquire<Fsm<T>>();
+            Fsm<T> fsm = new Fsm<T> {Name = name, m_Owner = owner, m_IsDestroyed = false};
             foreach (FsmState<T> state in states)
             {
                 if (state == null)
@@ -193,7 +187,7 @@ namespace Common.Fsm
                 Type stateType = state.GetType();
                 if (fsm.m_States.ContainsKey(stateType))
                 {
-                    throw new MyException(string.Format("FSM '%s' state '%s' is already exist.", name, stateType.FullName));
+                    throw new MyException(string.Format("FSM '{0}' state '{1}' is already exist.", new TypeNamePair(typeof(T), name), stateType.FullName));
                 }
 
                 fsm.m_States.Add(stateType, state);
@@ -218,7 +212,7 @@ namespace Common.Fsm
                 state.Value.OnDestroy(this);
             }
 
-            m_Name = null;
+            Name = null;
             m_Owner = null;
             m_States.Clear();
 
@@ -241,7 +235,7 @@ namespace Common.Fsm
             FsmState<T> state = GetState<TState>();
             if (state == null)
             {
-                throw new MyException(string.Format("FSM '%s' can not start state '%s' which is not exist.", m_Name, typeof(TState).FullName));
+                throw new MyException(string.Format("FSM '{0}' can not start state '{1}' which is not exist.", new TypeNamePair(typeof(T), Name), typeof(TState).FullName));
             }
 
             m_CurrentStateTime = 0f;
@@ -273,7 +267,7 @@ namespace Common.Fsm
             FsmState<T> state = GetState(stateType);
             if (state == null)
             {
-                throw new MyException(string.Format("FSM '%s' can not start state '%s' which is not exist.", m_Name, stateType.FullName));
+                throw new MyException(string.Format("FSM '{0}' can not start state '{1}' which is not exist.", new TypeNamePair(typeof(T), Name), stateType.FullName));
             }
 
             m_CurrentStateTime = 0f;
@@ -386,7 +380,6 @@ namespace Common.Fsm
                 results.Add(state.Value);
             }
         }
-
         /// <summary>
         /// 有限状态机轮询。
         /// </summary>
@@ -434,7 +427,7 @@ namespace Common.Fsm
             FsmState<T> state = GetState(stateType);
             if (state == null)
             {
-                throw new MyException(string.Format("FSM '%s' can not change state to '%s' which is not exist.",  m_Name, stateType.FullName));
+                throw new MyException(string.Format("FSM '{0}' can not change state to '{1}' which is not exist.", new TypeNamePair(typeof(T), Name), stateType.FullName));
             }
 
             m_CurrentState.OnLeave(this, false);

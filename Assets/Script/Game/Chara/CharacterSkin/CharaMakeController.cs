@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using LifeGame.Model;
+using LifeGame.View;
 using UnityEngine;
 
-public class CharaMakeController : BaseController
+namespace LifeGame.Controller
 {
-    public override void BindMvc()
+    public class CharaMakeController : BaseController
     {
-        _model = CharaMakeModel.Instance;
-        _view = GetComponent<CharaMakeView>();
+        public override void BindMvc()
+        {
+            _model = CharaMakeModel.Instance;
+            _view = GetComponent<CharaMakeView>();
+        }
     }
 }

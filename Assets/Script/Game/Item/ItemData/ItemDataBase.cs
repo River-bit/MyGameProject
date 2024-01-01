@@ -1,19 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using cfg.chara;
 using cfg.item;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public abstract class ItemDataBase
+namespace LifeGame.Item
 {
-    public ItemDataBase(int id,EType itemType,int cnt = 1)
+    [Serializable]
+    public abstract class ItemDataBase
     {
-        this.id = id;
-        this.type = itemType;
-        this.count = cnt;
+        public ItemDataBase(int id,EType itemType,int cnt = 1)
+        {
+            this.id = id;
+            this.itemType = itemType;
+            this.count = cnt;
+        }
+        public int id;
+        public EType itemType;
+        public int count;
     }
-    public int id;
-    public cfg.item.EType type;
-    public int count;
 }
-

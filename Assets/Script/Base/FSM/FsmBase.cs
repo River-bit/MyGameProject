@@ -1,11 +1,4 @@
-//------------------------------------------------------------
-// Game Framework
-// Copyright © 2013-2021 Jiang Yin. All rights reserved.
-// Homepage: https://gameframework.cn/
-// Feedback: mailto:ellan@gameframework.cn
-//------------------------------------------------------------
-
-using System;
+﻿using System;
 
 namespace Common.Fsm
 {
@@ -46,7 +39,7 @@ namespace Common.Fsm
         {
             get
             {
-                return m_Name;
+                return new TypeNamePair(OwnerType, m_Name).ToString();
             }
         }
 

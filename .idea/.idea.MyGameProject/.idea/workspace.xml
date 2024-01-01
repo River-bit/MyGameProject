@@ -5,41 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18ebaa64-b542-485c-a175-db94f77c12ee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaDataBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyGameProject/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/StandaloneWindows" beforeDir="false" afterPath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/StandaloneWindows" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/StandaloneWindows.manifest" beforeDir="false" afterPath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/StandaloneWindows.manifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/uiprefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AssetBundles/StandaloneWindows/uiprefab.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Luban/GenCode/chara.ESkinType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Luban/GenCode/chara.ESkinType.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/BillingMode.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/BillingMode.json.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chara.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chara.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chara/Base/chara__0003_arm_base.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chara/Base/chara__0003_arm_base.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chara/Base/chara__0004_leg_base.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chara/Base/chara__0004_leg_base.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chara/Base/chara__0005_body_base.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chara/Base/chara__0005_body_base.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chara/Base/chara__0007_head_base.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chara/Base/chara__0007_head_base.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chara/Clouth/chara__0000_clouth_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chara/Clouth/chara__0000_clouth_1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chara/Glasses/chara__0002_glasses.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chara/Glasses/chara__0002_glasses.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chara/Hair/chara__0006_hair_front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chara/Hair/chara__0006_hair_front.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chara/Hair/chara__0008_hair_back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chara/Hair/chara__0008_hair_back.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Chara/Pants/chara__0001_pants.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Chara/Pants/chara__0001_pants.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/UI/CharaMakePanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/UI/CharaMakePanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/UI/TimePanel.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/UI/TimePanel.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/ResourcesManager/ABManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/ResourcesManager/ABManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Library/Ink/Editor/Core/Compiler/UnityInkFileHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Library/Ink/Editor/Core/Compiler/UnityInkFileHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/UI/CharaMakePanel.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/UI/CharaMakePanel.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/ConfigReader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/ConfigReader.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/MyException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/MyException.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/SigletonBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/SigletonBase.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/TransformHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/TransformHelper.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/LoopScrollView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/LoopScrollView.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/MyToggleGroup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/MyToggleGroup.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/UITools.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/UITools.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/FSM/Fsm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/FSM/Fsm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/FSM/FsmBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/FSM/FsmBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/FSM/FsmManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/FSM/FsmManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/FSM/FsmStateBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/FSM/FsmStateBase.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Script/Base/ResourcesManager/ResourcesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/ResourcesManager/ResourcesManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Script/test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/StandaloneWindows" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/StandaloneWindows.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/StandaloneWindows.manifest.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/StandaloneWindows.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/uiprefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/uiprefab.manifest" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/uiprefab.manifest.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/uiprefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Base/UI/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Base/UI/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaSkinInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaSkinInfo.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaShowView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaShowView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Chara/PlayerStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Chara/PlayerStatus.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaDataBase.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/EquipItemDataData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/EquipItemData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/EquipItemDataData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/EquipItemData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/ItemDataBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/ItemDataBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/Game/Item/WarehouseModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Script/Game/Item/WarehouseModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/UILayer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/UI/UILayer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/test.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Script/test.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigTable/Datas/__beans__.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigTable/Datas/__beans__.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConfigTable/Datas/__enums__.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigTable/Datas/__enums__.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigTable/Datas/__tables__.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigTable/Datas/__tables__.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,45 +66,29 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A3B02D6F-9B49-4355-B946-095EA1F25C54/23/5df3c012/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/test.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Chara/CharaManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Global.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Procedure/ProcedureManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Editor/AssetBundleBuilder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Base/CommonTool/MyException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Base/Common/TypeNamePair.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Base/FSM/FsmBase.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/UI/UILayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Base/ResourcesManager/ResourcesManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/MyToggleGroup.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Base/FSM/FsmManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A3B02D6F-9B49-4355-B946-095EA1F25C54/f5/43b24098/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Initializer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Base/Save/SaveManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A3B02D6F-9B49-4355-B946-095EA1F25C54/23/5df3c012/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Chara/CharaManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Base/Save/ISaveable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/227AFAEE-B589-4C00-B1D9-AA4278F87F8C/8b/9a5d51bb/SaveType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Procedure/States/StartState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Base/ResourcesManager/ResourcesManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/105DA115-9EC9-496A-B931-0694C7B11DD2/74/86273e28/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Base/Save/SaveDataType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/FAA24DE0-FFB3-4694-8C03-84D33A7E3FC4/49/d5fb483f/CharacterInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/900DC5CA-37FE-4089-8476-5DCCF7E242DE/8e/dfc60f05/EventDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A3B02D6F-9B49-4355-B946-095EA1F25C54/f5/43b24098/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Game/Procedure/ProcedureState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/ConfigReader.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/CharacterMaker/CharacterMakerModel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/CharacterSkin/CharacterSkinModel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/UI/UILayer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaShowView.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/UI/UIManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaMaker.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharaInfo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharaSkinInfo.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharaMaker.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharacterSkinModel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaMakeController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaMakeView.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Player/CharacterSkin/CharaMakeModel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaMaker.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharacterSkinModel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeModel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/LoopScrollView.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UITool.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UITools.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/ToggleGroup.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/UITools.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/MVC/BaseModel.cs" />
@@ -96,21 +96,50 @@
       <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/UI/MyToggleGroup.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaSkinInfo.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/TransformHelper.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeView.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/EquipItemDataData.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Editor/AssetBundleBuilder.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/test.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/ResourcesManager/ResourcesManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/ResourcesManager/ABManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/FSM/FSMStateBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/FSM/FSMManger.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/CommonTool/MyException.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/FSM/IFsmState.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/FSM/IFsm.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/FSM/FsmStateBase.cs" />
-      <option value="$PROJECT_DIR$/Assets/Script/Base/FSM/FsmBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/FSM/IFsmManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/FSM/IFsm.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/FSM/FsmState.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/FSM/Fsm.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/Common/TypeValuePair.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/Common/TypeNamePair.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/FSM/FsmBase.cs" />
       <option value="$PROJECT_DIR$/Assets/Script/Base/FSM/FsmManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Procedure/ProcedureFsm.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/Common/Type.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/test.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Procedure/ProcedureState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Procedure/ProcedureManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Initializer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Procedure/States/StartState.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/ResourcesManager/ResourcesManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/Common/UI/MyToggleGroup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/EquipItemDataData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/ItemDataBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaShowView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaDataBase.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/WarehouseModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Item/ItemData/EquipItemData.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/Save/Seri.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/Save/ISaveable.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/Save/SaveDataType.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/Save/SaveManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/test.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeView.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Global.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Base/UI/UIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharacterSkin/CharaMakeController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Script/Game/Chara/CharaManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2ZDcd1zzwKDsUdaPyItL5NYczJh" />
@@ -136,7 +165,8 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -157,10 +187,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="27644">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="27644" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -184,6 +214,7 @@
       <workItem from="1703257365502" duration="7620000" />
       <workItem from="1703424827810" duration="8729000" />
       <workItem from="1703436415556" duration="986000" />
+      <workItem from="1703940944013" duration="35747000" />
     </task>
     <servers />
   </component>
@@ -206,6 +237,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Script/Game/Procedure/States/StartState.cs</url>
+          <line>13</line>
+          <properties documentPath="C:\development\unity\project\LifeGame\MyGameProject\Assets\Script\Game\Procedure\States\StartState.cs" initialLine="13" containingFunctionPresentation="method 'OnInit'">
+            <startOffsets>
+              <option value="343" />
+            </startOffsets>
+            <endOffsets>
+              <option value="392" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

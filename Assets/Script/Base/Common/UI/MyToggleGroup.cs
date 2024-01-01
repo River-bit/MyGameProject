@@ -18,7 +18,6 @@ namespace Common.UI
             _toggleGroup = GetComponent<ToggleGroup>();
             _toggleGroup.allowSwitchOff = false;
         }
-
         public void AddToggle(UnityAction<bool> callBack,UnityAction<Transform> itemInit)
         {
             var item = Instantiate(_itemBase, transform);
@@ -36,6 +35,15 @@ namespace Common.UI
             _toggles.Add(toggle);
         }
 
+        public void Switch(int index)
+        {
+            if (index >= _toggles.Count)
+            {
+                throw new MyException("index out of the range of toggle group!!");
+            }
+            _toggles[index].isOn = true;
+        } 
+            
         public Toggle GetItem(int index)
         {
             return _toggles.Count > index? _toggles[index]:null;

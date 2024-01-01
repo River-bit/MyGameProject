@@ -14,11 +14,11 @@ public class ResourcesManager : SigletonMonoBase<ResourcesManager>
     public T Load<T>(string path)where T:Object
     {
         T ret = null;
-// #if UNITY_EDITOR
-//         ret = Resources.Load<T>(path);
-// #else
+#if UNITY_EDITOR
+        ret = Resources.Load<T>(path);
+#else
          ret = ABManager.Instance.LoadResource<T>(path, Path.GetFileName(path));
-// #endif
+#endif
         Assert.IsNotNull(ret,path + "资源加载失败!!!");
         return ret;
     }

@@ -279,11 +279,13 @@
         <e p="Scene" t="Include" />
         <e p="Script" t="Include">
           <e p="Base" t="Include">
-            <e p="CommonTool" t="Include">
+            <e p="Common" t="Include">
               <e p="ConfigReader.cs" t="Include" />
               <e p="MyException.cs" t="Include" />
               <e p="SigletonBase.cs" t="Include" />
               <e p="TransformHelper.cs" t="Include" />
+              <e p="TypeHelper.cs" t="Include" />
+              <e p="TypeNamePair.cs" t="Include" />
               <e p="UI" t="Include">
                 <e p="LoopScrollView.cs" t="Include" />
                 <e p="MyToggleGroup.cs" t="Include" />
@@ -297,7 +299,9 @@
               <e p="Fsm.cs" t="Include" />
               <e p="FsmBase.cs" t="Include" />
               <e p="FsmManager.cs" t="Include" />
-              <e p="FSMStateBase.cs" t="Include" />
+              <e p="FsmState.cs" t="Include" />
+              <e p="IFsm.cs" t="Include" />
+              <e p="IFsmManager.cs" t="Include" />
             </e>
             <e p="MVC" t="Include">
               <e p="BaseController.cs" t="Include" />
@@ -307,6 +311,12 @@
             <e p="ResourcesManager" t="Include">
               <e p="ABManager.cs" t="Include" />
               <e p="ResourcesManager.cs" t="Include" />
+            </e>
+            <e p="Save" t="Include">
+              <e p="ISaveable.cs" t="Include" />
+              <e p="SaveDataType.cs" t="Include" />
+              <e p="SaveManager.cs" t="Include" />
+              <e p="Serialization.cs" t="Include" />
             </e>
             <e p="UI" t="Include">
               <e p="UIManager.cs" t="Include" />
@@ -323,9 +333,8 @@
                 <e p="CharaMakeView.cs" t="Include" />
                 <e p="CharaShowView.cs" t="Include" />
               </e>
+              <e p="CharaDataBase.cs" t="Include" />
               <e p="CharaManager.cs" t="Include" />
-              <e p="CharaSkinInfo.cs" t="Include" />
-              <e p="PlayerStatus.cs" t="Include" />
             </e>
             <e p="Gamble" t="Include">
               <e p="blackjack" t="Include">
@@ -347,21 +356,30 @@
                 <e p="TexasPokerModel.cs" t="Include" />
               </e>
             </e>
+            <e p="GameManager.cs" t="Include" />
+            <e p="Global.cs" t="Include" />
+            <e p="Initializer.cs" t="Include" />
             <e p="Item" t="Include">
               <e p="ItemData" t="Include">
-                <e p="EquipItemDataData.cs" t="Include" />
+                <e p="EquipItemData.cs" t="Include" />
                 <e p="ItemDataBase.cs" t="Include" />
               </e>
               <e p="WarehouseModel.cs" t="Include" />
             </e>
+            <e p="Procedure" t="Include">
+              <e p="ProcedureManager.cs" t="Include" />
+              <e p="ProcedureState.cs" t="Include" />
+              <e p="States" t="Include">
+                <e p="StartState.cs" t="Include" />
+              </e>
+            </e>
+            <e p="test.cs" t="Include" />
             <e p="Time" t="Include">
               <e p="TimeManager.cs" t="Include" />
             </e>
-          </e>
-          <e p="GameManager.cs" t="Include" />
-          <e p="test.cs" t="Include" />
-          <e p="UI" t="Include">
-            <e p="UILayer.cs" t="Include" />
+            <e p="UI" t="Include">
+              <e p="UILayer.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="StreamingAssets" t="Include">

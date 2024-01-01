@@ -1,34 +1,24 @@
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace Common.Fsm
 {
-    public class FsmManager : SigletonMonoBase<FsmManager>
+    /// <summary>
+    /// 有限状态机管理器。
+    /// </summary>
+    public sealed class FsmManager : Common.SigletonMonoBase<FsmManager>, IFsmManager
     {
-        private readonly Dictionary<string, FsmBase> m_Fsms;
+        private readonly Dictionary<TypeNamePair, FsmBase> m_Fsms;
         private readonly List<FsmBase> m_TempFsms;
 
-        /// <summary>
+        /// <summary>s
         /// 初始化有限状态机管理器的新实例。
         /// </summary>
         public FsmManager()
         {
-            m_Fsms = new Dictionary<string, FsmBase>();
+            m_Fsms = new Dictionary<TypeNamePair, FsmBase>();
             m_TempFsms = new List<FsmBase>();
-        }
-
-        /// <summary>
-        /// 获取游戏框架模块优先级。
-        /// </summary>
-        /// <remarks>优先级较高的模块会优先轮询，并且关闭操作会后进行。</remarks>
-        internal override int Priority
-        {
-            get
-            {
-                return 1;
-            }
         }
 
         /// <summary>
@@ -45,17 +35,17 @@ namespace Common.Fsm
         /// <summary>
         /// 有限状态机管理器轮询。
         /// </summary>
-        /// <param name="elapseSeconds">逻辑流逝时间，以秒为单位。</param>
-        /// <param name="realElapseSeconds">真实流逝时间，以秒为单位。</param>
-        internal override void Update(float elapseSeconds, float realElapseSeconds)
+        void Update()
         {
+            float elapseSeconds = Time.deltaTime;
+            float realElapseSeconds = Time.unscaledTime;
             m_TempFsms.Clear();
             if (m_Fsms.Count <= 0)
             {
                 return;
             }
 
-            foreach (KeyValuePair<string, FsmBase> fsm in m_Fsms)
+            foreach (KeyValuePair<TypeNamePair, FsmBase> fsm in m_Fsms)
             {
                 m_TempFsms.Add(fsm.Value);
             }
@@ -74,7 +64,7 @@ namespace Common.Fsm
         /// <summary>
         /// 关闭并清理有限状态机管理器。
         /// </summary>
-        internal override void Shutdown()
+        void OnDestroy()
         {
             foreach (KeyValuePair<TypeNamePair, FsmBase> fsm in m_Fsms)
             {
@@ -142,9 +132,9 @@ namespace Common.Fsm
         /// </summary>
         /// <typeparam name="T">有限状态机持有者类型。</typeparam>
         /// <returns>要获取的有限状态机。</returns>
-        public Fsm<T> GetFsm<T>() where T : class
+        public IFsm<T> GetFsm<T>() where T : class
         {
-            return (Fsm<T>)InternalGetFsm(new TypeNamePair(typeof(T)));
+            return (IFsm<T>)InternalGetFsm(new TypeNamePair(typeof(T)));
         }
 
         /// <summary>
@@ -168,9 +158,9 @@ namespace Common.Fsm
         /// <typeparam name="T">有限状态机持有者类型。</typeparam>
         /// <param name="name">有限状态机名称。</param>
         /// <returns>要获取的有限状态机。</returns>
-        public Fsm<T> GetFsm<T>(string name) where T : class
+        public IFsm<T> GetFsm<T>(string name) where T : class
         {
-            return (Fsm<T>)InternalGetFsm(new TypeNamePair(typeof(T), name));
+            return (IFsm<T>)InternalGetFsm(new TypeNamePair(typeof(T), name));
         }
 
         /// <summary>
@@ -239,19 +229,19 @@ namespace Common.Fsm
         /// 创建有限状态机。
         /// </summary>
         /// <typeparam name="T">有限状态机持有者类型。</typeparam>
-        /// <param name="name">有限状态机名称。</param>
+        /// <param name="fsmName">有限状态机名称。</param>
         /// <param name="owner">有限状态机持有者。</param>
         /// <param name="states">有限状态机状态集合。</param>
         /// <returns>要创建的有限状态机。</returns>
-        public IFsm<T> CreateFsm<T>(string name, T owner, params FsmState<T>[] states) where T : class
+        public IFsm<T> CreateFsm<T>(string fsmName, T owner, params FsmState<T>[] states) where T : class
         {
-            TypeNamePair typeNamePair = new TypeNamePair(typeof(T), name);
-            if (HasFsm<T>(name))
+            TypeNamePair typeNamePair = new TypeNamePair(typeof(T), fsmName);
+            if (HasFsm<T>(fsmName))
             {
-                throw new MyException(Utility.Text.Format("Already exist FSM '{0}'.", typeNamePair));
+                throw new MyException($"Already exist FSM '{typeNamePair}'.");
             }
 
-            Fsm<T> fsm = Fsm<T>.Create(name, owner, states);
+            Fsm<T> fsm = Fsm<T>.Create(fsmName, owner, states);
             m_Fsms.Add(typeNamePair, fsm);
             return fsm;
         }
@@ -272,19 +262,19 @@ namespace Common.Fsm
         /// 创建有限状态机。
         /// </summary>
         /// <typeparam name="T">有限状态机持有者类型。</typeparam>
-        /// <param name="name">有限状态机名称。</param>
+        /// <param name="fsmName">有限状态机名称。</param>
         /// <param name="owner">有限状态机持有者。</param>
         /// <param name="states">有限状态机状态集合。</param>
         /// <returns>要创建的有限状态机。</returns>
-        public IFsm<T> CreateFsm<T>(string name, T owner, List<FsmState<T>> states) where T : class
+        public IFsm<T> CreateFsm<T>(string fsmName, T owner, List<FsmState<T>> states) where T : class
         {
-            TypeNamePair typeNamePair = new TypeNamePair(typeof(T), name);
-            if (HasFsm<T>(name))
+            TypeNamePair typeNamePair = new TypeNamePair(typeof(T), fsmName);
+            if (HasFsm<T>(fsmName))
             {
-                throw new MyException(Utility.Text.Format("Already exist FSM '{0}'.", typeNamePair));
+                throw new MyException($"Already exist FSM '{typeNamePair}'.");
             }
 
-            Fsm<T> fsm = Fsm<T>.Create(name, owner, states);
+            Fsm<T> fsm = Fsm<T>.Create(fsmName, owner, states);
             m_Fsms.Add(typeNamePair, fsm);
             return fsm;
         }
@@ -401,4 +391,3 @@ namespace Common.Fsm
         }
     }
 }
-
